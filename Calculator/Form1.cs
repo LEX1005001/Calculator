@@ -35,42 +35,50 @@ namespace Calculator
 
         private void button_3_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "3";
+            vm.Equation += "3";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void button_4_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "4";
+            vm.Equation += "4";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void button_5_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "5";
+            vm.Equation += "5";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void button_6_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "6";
+            vm.Equation += "6";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void button_7_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "7";
+            vm.Equation += "7";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void button_8_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "8";
+            vm.Equation += "8";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void button_9_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "9";
+            vm.Equation += "9";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void button_0_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += "0";
+            vm.Equation += "0";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void buttonPlus_Click(object sender, EventArgs e)
@@ -114,6 +122,7 @@ namespace Calculator
         private void buttonDellete_Click(object sender, EventArgs e)
         {
             textBoxInput.Text = string.Empty;
+            
         }
     }
 }

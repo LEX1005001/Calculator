@@ -83,38 +83,44 @@ namespace Calculator
 
         private void buttonPlus_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += " + ";
+            vm.Equation += " + ";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void buttonMinus_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += " - ";
+            vm.Equation += " - ";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void buttonUmn_Click(object sender, EventArgs e)
         {
-            Text = textBoxInput.Text += " * ";
+            vm.Equation += " * ";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void buttonDel_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += " / ";
+            vm.Equation += " / ";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void buttonOpnSc_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += " ( ";
+            vm.Equation += "(";
+            textBoxInput.Text = vm.Equation;
         }
 
         private void buttonClosedSc_Click(object sender, EventArgs e)
         {
-            textBoxInput.Text += " ) ";
+            vm.Equation += ")";
+            textBoxInput.Text = vm.Equation;
         }
 
 
         private void buttonRavno_Click(object sender, EventArgs e)
         {
-           
+
             textBoxOutput.Text = vm.Evaluate();
 
         }
@@ -122,6 +128,7 @@ namespace Calculator
         private void buttonDellete_Click(object sender, EventArgs e)
         {
             textBoxInput.Text = string.Empty;
+            vm.Equation = string.Empty;
             
         }
     }

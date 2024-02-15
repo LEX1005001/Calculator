@@ -101,39 +101,36 @@ namespace Calculator_Lib
             Stack<double> values = new Stack<double>();
             foreach (var token in equation)
             {
-                if (!operators.Contains(token))
-                {
-                    values.Push(double.Parse(token));
-                }
-                else
                 {
                     switch (token)
                     {
-                        case " + ":
+                        case "+":
                             a = values.Pop();
                             b = values.Pop();
                             values.Push(a + b);
                             break;
 
-                        case " - ":
+                        case "-":
                             a = values.Pop();
                             b = values.Pop();
                             values.Push(a - b);
                             break;
 
-                        case " * ":
+                        case "*":
                             a = values.Pop();
                             b = values.Pop();
                             values.Push(a * b);
                             break;
 
-                        case " / ":
+                        case "/":
                             a = values.Pop();
                             b = values.Pop();
                             values.Push(a / b);
                             break;
+                        default:
+                            values.Push(double.Parse(token));
+                            break;
                     }
-                }
             }
             return values.Peek();
         }

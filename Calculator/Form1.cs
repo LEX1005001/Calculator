@@ -107,21 +107,21 @@ namespace Calculator
 
         private void buttonOpnSc_Click(object sender, EventArgs e)
         {
-            vm.Equation += "(";
+            vm.Equation += "( ";
             textBoxInput.Text = vm.Equation;
         }
 
         private void buttonClosedSc_Click(object sender, EventArgs e)
         {
-            vm.Equation += ")";
+            vm.Equation += " )";
             textBoxInput.Text = vm.Equation;
         }
 
 
         private void buttonRavno_Click(object sender, EventArgs e)
         {
-
             textBoxOutput.Text = vm.Evaluate();
+           
 
         }
 

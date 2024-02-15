@@ -101,7 +101,6 @@ namespace Calculator_Lib
             Stack<double> values = new Stack<double>();
             foreach (var token in equation)
             {
-                {
                     switch (token)
                     {
                         case "+":

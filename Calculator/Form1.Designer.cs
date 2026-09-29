@@ -52,7 +52,7 @@
             // 
             // textBoxInput
             // 
-            this.textBoxInput.BackColor = System.Drawing.Color.Gold;
+            this.textBoxInput.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxInput.Location = new System.Drawing.Point(60, 80);
             this.textBoxInput.Multiline = true;
@@ -62,7 +62,7 @@
             // 
             // textBoxOutput
             // 
-            this.textBoxOutput.BackColor = System.Drawing.Color.Lime;
+            this.textBoxOutput.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.textBoxOutput.Location = new System.Drawing.Point(60, 120);
             this.textBoxOutput.Multiline = true;
@@ -172,7 +172,7 @@
             // 
             // buttonRavno
             // 
-            this.buttonRavno.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonRavno.BackColor = System.Drawing.SystemColors.Control;
             this.buttonRavno.Location = new System.Drawing.Point(308, 80);
             this.buttonRavno.Name = "buttonRavno";
             this.buttonRavno.Size = new System.Drawing.Size(76, 65);
@@ -243,13 +243,13 @@
             // 
             // buttonDellete
             // 
-            this.buttonDellete.BackColor = System.Drawing.Color.Firebrick;
+            this.buttonDellete.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDellete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.buttonDellete.Location = new System.Drawing.Point(60, 333);
             this.buttonDellete.Name = "buttonDellete";
             this.buttonDellete.Size = new System.Drawing.Size(63, 51);
             this.buttonDellete.TabIndex = 21;
-            this.buttonDellete.Text = "Del";
+            this.buttonDellete.Text = "🗑";
             this.buttonDellete.UseVisualStyleBackColor = false;
             this.buttonDellete.Click += new System.EventHandler(this.buttonDellete_Click);
             // 
